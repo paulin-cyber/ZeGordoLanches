@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="hero">
+    <div
+      style="display:inline-flex;background:#fff;border-radius:50%;width:120px;height:120px;overflow:hidden;border:4px solid #F5C518;align-items:center;justify-content:center">
+      <img src="ChatGPT Image 15 de jun. de 2026, 22_22_04.png" style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;height: 100%;
+" alt="">
+    </div>
+    <h1>Zé Gordo Lanches</h1>
+  </div>
+
+  <nav class="nav">
+    <button class="nav-btn active" onclick="showSection('macarrao',this)">Macarrão</button>
+    <button class="nav-btn" onclick="showSection('combos',this)">Combos</button>
+    <button class="nav-btn" onclick="showSection('artesanal',this)">H. Artesanal</button>
+    <button class="nav-btn" onclick="showSection('hamburguer',this)">Hambúrguer</button>
+    <button class="nav-btn" onclick="showSection('outros',this)">Outros</button>
+    <button class="nav-btn" onclick="showSection('bebidas',this)">Bebidas</button>
+  </nav>
+
+  <div class="content">
+    <div class="section visible" id="sec-macarrao">
+      <div class="section-title">Macarrão na Chapa</div>
+      <div id="items-macarrao"></div>
+    </div>
+    <div class="section" id="sec-combos">
+      <div class="section-title">Combos</div>
+      <div id="items-combos"></div>
+    </div>
+    <div class="section" id="sec-artesanal">
+      <div class="section-title">Hambúrguer Artesanal</div>
+      <div id="items-artesanal"></div>
+    </div>
+    <div class="section" id="sec-hamburguer">
+      <div class="section-title">Hambúrguer</div>
+      <div id="items-hamburguer"></div>
+    </div>
+    <div class="section" id="sec-outros">
+      <div class="section-title">Outros</div>
+      <div id="items-outros"></div>
+    </div>
+    <div class="section" id="sec-bebidas">
+      <div class="section-title">Bebidas</div>
+      <div id="items-bebidas"></div>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-title">Faça seu pedido</div>
+      <a class="btn-wpp" href="https://wa.me/5537991919424?text=Olá, gostaria de fazer um pedido!" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.06L2 22l5.12-1.35A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.93 13.44c-.2.56-1.19 1.08-1.64 1.14-.42.06-.96.08-1.55-.1-.36-.11-.81-.26-1.4-.51-2.45-1.06-4.05-3.52-4.18-3.68-.12-.16-.99-1.32-.99-2.52 0-1.2.62-1.79.85-2.03.22-.24.49-.3.65-.3l.47.01c.15 0 .35-.06.55.42.2.49.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.26-.24.4-.12.14-.26.32-.37.43-.12.12-.24.25-.1.49.14.24.61.99 1.3 1.6.89.79 1.64 1.04 1.88 1.16.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.41.67 1.65.79.24.12.4.18.46.28.06.1.06.58-.14 1.14z" />
+        </svg>
+        Entrar em contato pelo WhatsApp
+      </a>
+      <p style="text-align: center;font-weight: 700;">ou</p>
+      <a class="btn-ml" href="https://matalarica.com.br/" target="_blank">
+        <img width="25" height="25" src="matalarica.png" alt="Mata Larica"
+          target="_blank">Pedir pelo Mata Larica
+      </a>
+    </div>
+  </div>
+
+  <div class="cart-bar">
+    <div class="cart-total" id="cart-total">Nenhum item selecionado</div>
+    <div class="cart-items-list" id="cart-list">
+      <div class="cart-empty">Selecione os itens para ver a somatória</div>
+    </div>
+    <div class="aviso">Esta é apenas uma somatória do valor do pedido (sem o frete), peça pelo WhatsApp ou Mata Larica.
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
